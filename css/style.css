@@ -1,0 +1,1206 @@
+/************************* Glboal *************************/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.header li{
+    padding: 0px 3px;
+}
+body{
+    color: #4c4d4d;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    padding: 20px 0px;
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 170%;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/************************* Header *************************/
+.header{
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.headerContainer{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.headerImg{
+    width: 15%;
+}
+.header h2{
+    color: #fff;
+}
+.header ul{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.header a{
+    color: rgba(250, 250, 250, 0.9);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 20px 12px;
+    transition: all 0.25s 0s ease;
+}
+.header a:hover{
+    color: #20c997;
+}
+.header a span{
+    color: #20c997;
+}
+
+/************************* Top Page *************************/
+.sett{
+    position: fixed;
+    padding: 20px 9px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    right: 0;
+    top:40%;
+    background-color: #555;
+    color: white;
+    z-index: 10;
+}
+.goTop{
+    position: fixed;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50%;
+    right: 10px;
+    bottom:10px;
+    background-color: #555;
+    color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+.goTop a,.goTop i{
+    padding: 0;
+}
+
+.topPage{
+    background-image: url(images/intro-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-position: center; */
+    position: relative;
+}
+.topPageLayout{
+    background-color: #111418;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+.topPageCaption{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:1;
+}
+.topPageCaptionContainer{
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+}
+.topPageCaption .aarrow{
+    color: white;
+    position: absolute;
+    left: 50%;
+    animation: arrowDown 1.5s ease infinite;
+}
+@keyframes arrowDown {
+    0%{
+        opacity: 0;
+        bottom: 50px;
+    }
+    100%{
+        opacity: 1;
+        bottom: 10px;
+    }
+}
+.topPageCaption *{
+    margin: 10px 0px;
+}
+
+.topPageCaptionContainer h3{
+    font-weight: 400;
+    font-size: 30px;
+}
+.topPageCaptionContainer h1 {
+    font-weight: 500;
+    font-size: 62px;
+}
+.topPageCaptionContainer h1 span{
+    animation: myCursor 30s 0s infinite;
+}
+.topPageCaptionContainer h1::before{
+    content: "";
+    animation: typing 30s 0s infinite;
+}
+@keyframes myCursor{
+    3.4%{
+        opacity: 1;
+    }
+    7.5%{
+        opacity: 0;
+    }
+    11.6%{
+        opacity: 1;
+    }
+    15.7%{
+        opacity: 0;
+    }
+    19.8%{
+        opacity: 1;
+    }
+
+    25%{
+        opacity: 1;
+    }
+    29.05%{
+        opacity: 0;
+    }
+    33.1%{
+        opacity: 1;
+    }
+    37.15%{
+        opacity: 0;
+    }
+    41.2%{
+        opacity: 1;
+    }
+
+    46%{
+        opacity: 1;
+    }
+    50.05%{
+        opacity: 0;
+    }
+    54.1%{
+        opacity: 1;
+    }
+    58.15%{
+        opacity: 0;
+    }
+    62.2%{
+        opacity: 1;
+    }
+
+    66.6%{
+        opacity: 1;
+    }
+    70.45%{
+        opacity: 0;
+    }
+    74.3%{
+        opacity: 1;
+    }
+    78.15%{
+        opacity: 0;
+    }
+    82%{
+        opacity: 1;
+    }
+    
+
+}
+@keyframes typing {
+    0.2%{
+        content: "";
+    }
+    0.4%{
+        content: "I";
+    }
+    0.6%{
+        content: "I'";
+    }
+    0.8%{
+        content: "I'm";
+    }
+    1%{
+        content: "I'm ";
+    }
+    1.2%{
+        content: "I'm M";
+    }
+    1.4%{
+        content: "I'm Mo";
+    }
+    1.6%{
+        content: "I'm Moh";
+    }
+    1.8%{
+        content: "I'm Moha";
+    }
+    2%{
+        content: "I'm Moham";
+    }
+    2.2%{
+        content: "I'm Mohame";
+    }
+    2.4%{
+        content: "I'm Mohamed";
+    }
+    2.6%{
+        content: "I'm Mohamed M";
+    }
+    2.8%{
+        content: "I'm Mohamed Ma";
+    }
+    3%{
+        content: "I'm Mohamed Mag";
+    }
+    3.2%{
+        content: "I'm Mohamed Magd";
+    }
+    3.4%{
+        content: "I'm Mohamed Magdy";
+    }
+    19.8%{
+        content: "I'm Mohamed Magdy";
+    }
+    20%{
+        content: "I'm Mohamed Magd";
+    }
+    20.2%{
+        content: "I'm Mohamed Mag";
+    }
+    20.4%{
+        content: "I'm Mohamed Ma";
+    }
+    20.6%{
+        content: "I'm Mohamed M";
+    }
+    20.8%{
+        content: "I'm Mohamed ";
+    }
+    21%{
+        content: "I'm Mohamed";
+    }
+    21.2%{
+        content: "I'm Mohame";
+    }
+    21.4%{
+        content: "I'm Moham";
+    }
+    21.6%{
+        content: "I'm Moha";
+    }
+    21.8%{
+        content: "I'm Moh";
+    }
+    22%{
+        content: "I'm Mo";
+    }
+    22.2%{
+        content: "I'm M";
+    }
+    22.4%{
+        content: "I'm ";
+    }
+    22.6%{
+        content: "I'm a";
+    }
+    22.8%{
+        content: "I'm a ";
+    }
+    23%{
+        content: "I'm a F";
+    }
+    23.2%{
+        content: "I'm a Fr";
+    }
+    23.4%{
+        content: "I'm a Fre";
+    }
+    23.6%{
+        content: "I'm a Free";
+    }
+    23.8%{
+        content: "I'm a Freel";
+    }
+    24%{
+        content: "I'm a Freela";
+    }
+    24.2%{
+        content: "I'm a Freelan";
+    }
+    24.4%{
+        content: "I'm a Freelanc";
+    }
+    24.6%{
+        content: "I'm a Freelance";
+    }
+    24.8%{
+        content: "I'm a Freelancer";
+    }
+    25%{
+        content: "I'm a Freelancer.";
+    }
+    41.2%{
+        content: "I'm a Freelancer.";
+    }
+    41.4%{
+        content: "I'm a Freelancer";
+    }
+    41.6%{
+        content: "I'm a Freelance";
+    }
+    41.8%{
+        content: "I'm a Freelanc";
+    }
+    42%{
+        content: "I'm a Freelan";
+    }
+    42.2%{
+        content: "I'm a Freela";
+    }
+    42.4%{
+        content: "I'm a Freel";
+    }
+    42.6%{
+        content: "I'm a Free";
+    }
+    42.8%{
+        content: "I'm a Fre";
+    }
+    43%{
+        content: "I'm a Fr";
+    }
+    43.2%{
+        content: "I'm a F";
+    }
+    43.4%{
+        content: "I'm a ";
+    }
+    43.6%{
+        content: "I'm a P";
+    }
+    43.8%{
+        content: "I'm a Ph";
+    }
+    44%{
+        content: "I'm a Pho";
+    }
+    44.2%{
+        content: "I'm a Phot";
+    }
+    44.4%{
+        content: "I'm a Photo";
+    }
+    44.6%{
+        content: "I'm a Photog";
+    }
+    44.8%{
+        content: "I'm a Photogr";
+    }
+    45%{
+        content: "I'm a Photogra";
+    }
+    45.2%{
+        content: "I'm a Photograp";
+    }
+    45.4%{
+        content: "I'm a Photograph";
+    }
+    45.6%{
+        content: "I'm a Photographe";
+    }
+    45.8%{
+        content: "I'm a Photographer";
+    }
+    46%{
+        content: "I'm a Photographer.";
+    }
+    62.2%{
+        content: "I'm a Photographer.";
+    }
+    62.4%{
+        content: "I'm a Photographer";
+    }
+    62.6%{
+        content: "I'm a Photographe";
+    }
+    62.8%{
+        content: "I'm a Photograph";
+    }
+    63%{
+        content: "I'm a Photograp";
+    }
+    63.2%{
+        content: "I'm a Photogra";
+    }
+    63.4%{
+        content: "I'm a Photogr";
+    }
+    63.6%{
+        content: "I'm a Photog";
+    }
+    63.8%{
+        content: "I'm a Photo";
+    }
+    64%{
+        content: "I'm a Phot";
+    }
+    64.2%{
+        content: "I'm a Pho";
+    }
+    64.4%{
+        content: "I'm a Ph";
+    }
+    64.6%{
+        content: "I'm a P";
+    }
+    64.8%{
+        content: "I'm a ";
+    }
+    65%{
+        content: "I'm a D";
+    }
+    65.2%{
+        content: "I'm a De";
+    }
+    65.4%{
+        content: "I'm a Des";
+    }
+    65.6%{
+        content: "I'm a Desi";
+    }
+    65.8%{
+        content: "I'm a Desig";
+    }
+    66%{
+        content: "I'm a Design";
+    }
+    66.2%{
+        content: "I'm a Designe";
+    }
+    66.4%{
+        content: "I'm a Designer";
+    }
+    66.6%{
+        content: "I'm a Designer.";
+    }
+    82%{
+        content: "I'm a Designer.";
+    }
+    82.2%{
+        content: "I'm a Designer";
+    }
+    82.4%{
+        content: "I'm a Designe";
+    }
+    82.6%{
+        content: "I'm a Design";
+    }
+    82.8%{
+        content: "I'm a Desig";
+    }
+    83%{
+        content: "I'm a Desi";
+    }
+    83.2%{
+        content: "I'm a Des";
+    }
+    83.4%{
+        content: "I'm a De";
+    }
+    83.6%{
+        content: "I'm a D";
+    }
+    83.8%{
+        content: "I'm a ";
+    }
+    84%{
+        content: "I'm a";
+    }
+    84.2%{
+        content: "I'm ";
+    }
+    84.4%{
+        content: "I'm";
+    }
+    84.6%{
+        content: "I'";
+    }
+    84.8%{
+        content: "I";
+    }
+    85%{
+        content: "";
+    }
+    
+}
+.topPageCaptionContainer p{
+    color: rgba(250, 250, 250, 0.9);
+    font-weight: 400;
+    font-size: 21px;
+}
+
+.topPageCaptionContainer .abutton{
+    display: inline-block;
+    margin-top: 50px;
+    color: #20c997;
+    border: 2px solid #20c997;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 27px;
+    padding: 12px 40px;
+    transition: all 0.5s 0s ease;
+}
+.topPageCaptionContainer .abutton:hover{
+    color: white;
+    background-color: #20c997;
+}
+
+/************************* Know Me More *************************/
+.backword{
+    wid
+    position: relative;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.backword h2{
+    color: rgba(222, 227, 228,0.4);
+    font-size: 8rem;
+    z-index: 0;
+}
+.backword h3{
+    position: absolute;
+    font-size: 36px;
+    z-index: 1;
+    color: #212529;
+}
+.backword h3::after{
+    content: "";
+    border-bottom: #20c997 3px solid;
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    left: 0;
+    width: 30%;
+    margin: auto;
+}
+
+
+.knowLeft{
+    width: 65%;
+    padding: 15px;
+}
+.knowLeft h4{
+    font-size: 1.75rem;
+    color: #252b33;
+    font-weight: 600;
+}
+.knowLeft span{
+    color: #20c997;
+}
+.knowLeft p{
+    margin: 20px 0px;
+}
+.knowRight{
+    width: 30%;
+    padding: 15px;
+}
+.knowRight ul{
+    list-style: none;
+}
+.knowRight li{
+    padding: 10px 0px;
+    border-bottom: 1px #eaeaea solid;
+}
+.knowRight li span{
+    font-weight: 600;
+    margin-right: 2px;
+}
+.knowRight li a{
+    color: #20c997;
+    transition: all .5s 0s ease ;
+}
+.knowRight li a:hover{
+    color: #198754;
+}
+.knowRight .borderBott0{
+    border: none;
+}
+.knowPb{
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    background-color: #20c997;
+    font-size: 16px;
+    border-radius: 27px;
+    padding: 12px 40px;
+    box-shadow: rgba(0,0,0,0.2) 0px 5px 15px;
+    transition: all 0.5s 0s ease;
+}
+.knowPb:hover{
+    background-color: #198754;
+    box-shadow: rgba(0,0,0,0.5) 0px 5px 15px;
+}
+
+.knowBottom{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.knowBottItem{
+    width: 25%;
+    text-align: center;
+}
+.knowBottItem h4{
+    color: #6c757d;
+    font-size: 2.75rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    padding: 5px;
+}
+.knowBottItem .exp::after{
+    content: "10+";
+    animation: num1 1s 0s ease;
+}
+.knowBottItem .clients::after{
+    content: "250+";
+    animation: num2 1s 0s ease;
+}
+.knowBottItem .projects::after{
+    content: "650+";
+    animation: num3 1s 0s ease;
+}
+.knowBottItem .rewards::after{
+    content: "38";
+    animation: num4 1s ease;
+}
+@keyframes num1 {
+    0%{
+        content: "0+";
+    }
+    10%{
+        content: "1+";
+    }
+    20%{
+        content: "2+";
+    }
+    30%{
+        content: "3+";
+    }
+    40%{
+        content: "4+";
+    }
+    50%{
+        content: "5+";
+    }
+    60%{
+        content: "6+";
+    }
+    70%{
+        content: "7+";
+    }
+    80%{
+        content: "8+";
+    }
+    90%{
+        content: "9+";
+    }
+    100%{
+        content: "10+";
+    }
+}
+@keyframes num2 {
+    0%{
+        content: "10+";
+    }
+    10%{
+        content: "50+";
+    }
+    20%{
+        content: "80+";
+    }
+    30%{
+        content: "112+";
+    }
+    40%{
+        content: "156+";
+    }
+    50%{
+        content: "178+";
+    }
+    60%{
+        content: "201+";
+    }
+    70%{
+        content: "213+";
+    }
+    80%{
+        content: "227+";
+    }
+    90%{
+        content: "242+";
+    }
+    100%{
+        content: "250+";
+    }
+}
+@keyframes num3 {
+    0%{
+        content: "10+";
+    }
+    10%{
+        content: "124+";
+    }
+    20%{
+        content: "186+";
+    }
+    30%{
+        content: "204+";
+    }
+    40%{
+        content: "238+";
+    }
+    50%{
+        content: "275+";
+    }
+    60%{
+        content: "357+";
+    }
+    70%{
+        content: "467+";
+    }
+    80%{
+        content: "579+";
+    }
+    90%{
+        content: "624+";
+    }
+    100%{
+        content: "650+";
+    }
+}
+@keyframes num4 {
+    0%{
+        content: "2";
+    }
+    10%{
+        content: "5";
+    }
+    20%{
+        content: "9";
+    }
+    30%{
+        content: "12";
+    }
+    40%{
+        content: "17";
+    }
+    50%{
+        content: "21";
+    }
+    60%{
+        content: "27";
+    }
+    70%{
+        content: "31";
+    }
+    80%{
+        content: "33";
+    }
+    90%{
+        content: "36";
+    }
+    100%{
+        content: "38";
+    }
+}
+
+.borderR{
+    border-right: 1px #eaeaea solid;
+}
+.borderRn{
+    border-right: 1px #eaeaea solid;
+}
+
+/************************* What I Do *************************/
+.do{
+    background-color: #f8f9fa;
+}
+.do .container{
+    width: 80%;
+}
+.doItem{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.doicon{
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    color: #20c997;
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.2) 0px 5px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.docaption{
+    width: 80%;
+}
+.docaption h4{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/************************* Resume *************************/
+.resumeSubcontainer{
+    width: 48%;
+}
+.resumeItem, .resumeEdu, .resumeExp{
+    width: 100%;
+    margin: 30px 0px;
+}
+
+.resumeSkill{
+    width: 100%;
+}
+.resumeEdu, .resumeExp, .resumeSkill{
+    font-size: 1.3rem;
+}
+.resumeItem{
+    border: 1px #eaeaea solid;
+    padding: 20px;
+}
+.resumeItem span{
+    color: white;
+    background-color: #20c997;
+    border-radius: 3px;
+    padding: 1.5px 7px;
+    font-size: .9rem;
+}
+.resumeItem  h4{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.resumeItem  h5{
+    color: #dc3545;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.resumeItem *{
+    margin: 10px 0px;
+}
+
+.resumebarItem{
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0px;
+}
+.resumebarItem h4{
+    font-weight: 500;
+    width: 50%;
+    text-align: left;
+}
+.resumebarItem .barNum{
+    text-align: right;
+}
+.barContainer{
+    width: 100%;
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: auto;
+    margin-top: 10px;
+}
+.barFront{
+    background-color: #20c997;
+    height: 100%;
+}
+.B65{
+    width: 65%;
+}
+.B70{
+    width: 70%;
+}
+.B95{
+    width: 95%;
+}
+.B60{
+    width: 60%;
+}
+.B80{
+    width: 80%;
+}
+.B99{
+    width: 99%;
+}
+.resumePb{
+    display: inline-block;
+    margin: 50px auto;
+    color: #6c757d;
+    background-color: transparent;
+    border: 2px solid #6c757d;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 27px;
+    padding: 12px 40px;
+    /* box-shadow: rgba(0,0,0,0.2) 0px 5px 15px; */
+    transition: all 0.5s 0s ease;
+}
+.resumepb:hover{
+    color: white;
+    background-color: #6c757d;
+}
+/************************* My Work *************************/
+.myWork{
+    background-color: #f8f9fa;
+}
+.myWork li a{
+    color: #6c757d;
+    padding: 5px 15px;
+    margin: 0px 2px;
+}
+.myWork li:hover a{
+    color: #20c997;
+}
+.myWork ul{
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.myWork .select{
+    color: #20c997;
+    border-bottom: #20c997 solid 2px;
+}
+
+.myWorkItem{
+    width: 33.333%;
+    padding: 0px 12px;
+}
+.myWorkItemContainer{
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    overflow: auto;
+    margin: 23px 0px;
+}
+.myWorkItemContainer img{
+    width: 100%;
+}
+.myWorkItemContainer .itemOL{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s 0s ease;
+}
+.myWorkItemContainer .itemOL:hover{
+    opacity: 1;
+}
+.myWorkItemContainer .itemOL h4{
+    font-size: 23px;
+    color: white;
+    font-weight: 400;
+}
+.myWorkItemContainer .itemOL h5{
+    font-size: 18px;
+    color: #eaeaea;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+/************************* Client *************************/
+.clientItem{
+    width: 49%;
+    background-color: #f8f9fa;
+    padding: 50px;
+    border-radius: 5px;
+}
+.clientItem .clentHead{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.clientItem .clentHead img{
+    border-radius: 50%;
+}
+.clientItem .clentHead .clientident{
+    width: 75%;
+    padding-left: 15PX;
+}
+.clientItem .clentHead .clientident h4{
+    color: #111;
+}
+.clientItem .clentHead .clientident h5{
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.clientItem  p{
+    margin: 20px 0px;
+    color: #111;
+    font-weight: 400;
+}
+.clientItem  .clientStar{
+    margin-top: 30px;
+    color: #ffc107;
+}
+/************************* Contact *************************/
+.contact{
+    background-color: #f8f9fa;
+}
+.contact h3{
+    margin: 10px 0px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #111;
+}
+.contactLeft{
+    width: 25%;
+    padding: 0px 50px;
+}
+.contactLeft p{
+    margin: 10px 0px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.contactLeft i{
+    color: #20c997;
+    margin-right: 10px;
+}
+.contactRight{
+    width: 75%;
+    padding: 0px 30px;
+}
+.contactRight form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.contactRight button{
+    margin: 30px auto;
+    color: #fff;
+    background-color: #20c997;
+    font-size: 16px;
+    border: none;
+    border-radius: 27px;
+    padding: 18px 48px;
+    box-shadow: rgba(0,0,0,0.2) 0px 5px 15px;
+    transition: all 0.5s 0s ease;
+}
+.contactRight button:hover{
+    background-color: #198754;
+}
+.contactRight .formFull{
+    width: 100%;
+    margin: 10px 0px;
+}
+.contactRight .formHalf{
+    width: 48.6%;
+    height: 50px;
+    margin: 10px 0px;
+}
+.contactRight form input,.contactRight form textarea{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    border: #dae1e3 solid 1px;
+    border-radius: 5px;
+    padding: 20px;
+}
+.contactRight form *::placeholder{
+    color: #b1b4b6;
+}
+/* 
+Cursor Pointer...
+
+button:not(:disabled) {
+    cursor: pointer;
+} 
+button:enabled {
+    cursor: pointer;
+} 
+*/
+
+/************************* Footer *************************/
+.footer p a{
+    color: #20c997;
+    transition: all 0.5s 0s ease;
+    font-weight: 500;
+}
+.footer p a:hover{
+    color: #198754;
+}
+.footer li a{
+    color: #4c4d4d;
+    transition: all 0.5s 0s ease;
+}
+.footer li a:hover{
+    color: #20c997;
+}
+.footer ul{
+    list-style: none;
+    display: flex;
+}
+.footer li{
+    padding: 0px 15px;
+}
+.footer .borderRSmall{
+    position: relative;
+}
+.footer .borderRSmall ::after{
+    content: "";
+    display: block;
+    height: 10px;
+    width: 1px;
+    background-color: #6c757d;
+    position: absolute;
+    top: 35%;
+    right: 0px;
+}
